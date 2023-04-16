@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>每天 60 秒读懂世界</title>
+    <link rel="icon" href="./favicon.png" />
+    <style>
+        .mac {
+            font-size: 16px;
+            color: #6a737d;
+        }
+
+        .mac .mac-top {
+            height: 15px;
+            background-color: #e3e3e3;
+            padding: 8px 12px;
+            border-top-left-radius: 3px;
+            border-top-right-radius: 3px;
+        }
+
+        .mac .mac-body {
+            background-color: #eeeeee;
+            font-size: 16px;
+            color: #666666;
+            overflow: auto;
+            padding: 20px;
+            font-family: "Source Code Pro", Consolas, Menlo, Monaco, "Courier New", monospace;
+        }
+
+        .mac .mac-top div {
+            float: left;
+            margin-right: 10px;
+            width: 13px;
+            height: 13px;
+            background-color: #ff5f57;
+            border-radius: 50px;
+        }
+
+        .mac .mac-top .circle-yellow {
+            float: left;
+            margin-right: 10px;
+            width: 13px;
+            height: 13px;
+            background-color: #ffbd2e;
+            border-radius: 50px;
+        }
+
+        .mac .mac-top .circle-green {
+            float: left;
+            margin-right: 10px;
+            width: 13px;
+            height: 13px;
+            background-color: #28ca42;
+            border-radius: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="mac">
+        <div class="mac-top">
+            <div class="circle-red"></div>
+            <div class="circle-yellow"></div>
+            <div class="circle-green"></div>
+        </div>
+        <div class="mac-body">
+            ${head}
+            ${content}
+            ${foot}
+        </div>
+    </div>
+</body>
+
+</html>
