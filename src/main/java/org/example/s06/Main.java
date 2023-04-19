@@ -54,7 +54,9 @@ public class Main {
             }
         }
         String templateHtml = new String(Files.readAllBytes(Paths.get("template.html")), StandardCharsets.UTF_8);
-        templateHtml = templateHtml.replace("${head}", "<h2>" + head + "</h2>").replace("${foot}", "<p>" + foot + "</p>");
+        templateHtml = templateHtml.replace("${head}", "<h2>" + head + "</h2>")
+                .replace("${foot}", "<p>" + foot + "</p>")
+                .replace("${date}", String.valueOf(System.currentTimeMillis()));
         StringBuilder sb = new StringBuilder();
         for (String s : body) {
             sb.append("<p>").append(s).append("</p>");
