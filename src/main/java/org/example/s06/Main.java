@@ -39,11 +39,15 @@ public class Main {
             log.error(result.getMessage());
             return;
         }
-        log.info(result.getMessage());
+        log.info(result.toString());
         String head = null;
         String foot = null;
         List<String> body = new ArrayList<>();
         int length = result.getData().size();
+        if (length == 0) {
+            log.error("数据为空！");
+            return;
+        }
         for (int i = 0; i < length; i++) {
             if (i == 0) {
                 head = result.getData().get(i);
